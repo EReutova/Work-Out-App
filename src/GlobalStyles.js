@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-import bg from "./title.jpeg"
 
 export default createGlobalStyle`
 :root {
@@ -33,13 +32,6 @@ export default createGlobalStyle`
         font-family: 'Raleway', sans-serif;
     }
     html, body {
-        background-image: url(${bg});
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        min-height: 100vh;
-        width: 100%;
-        z-index: -1;
+        
     }
 `;

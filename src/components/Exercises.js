@@ -229,6 +229,7 @@ const Select = styled.select`
 const Buttons = styled.div`
     display: flex;
     margin-left: 0 auto;
+    margin-bottom: 20px;
 `;
 const Container = styled.div`
     display: flex;

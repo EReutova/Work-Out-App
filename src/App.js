@@ -6,11 +6,13 @@ import {
 } from "react-router-dom";
 import { useState } from "react";
 
+import styled from "styled-components";
+
 import { FaDumbbell } from 'react-icons/fa';
 import { AiFillHeart } from 'react-icons/ai';
 import { SiWheniwork } from 'react-icons/si';
 
-import styled from "styled-components";
+import bg from "./title.jpeg"
 import Home from "./components/Home";
 import Exercises from "./components/Exercises";
 import Workouts from "./components/Workouts";
@@ -36,6 +38,7 @@ const App = () => {
 
 	return (
 		<Main>
+            <Background/>
 			<Router>
 				<GlobalStyles/>
 				<NavBar>
@@ -103,6 +106,19 @@ const Main = styled.div`
     @media all and (max-width: 414px) {
         margin-top: 60px;
     }
+`;
+const Background = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(${bg});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    height: 100vh;
+    width: 100%;
+    z-index: -100;
 `;
 const NavBar = styled.nav`
     display: flex;

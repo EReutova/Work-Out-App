@@ -211,6 +211,7 @@ const Select = styled.select`
     padding: 10px 20px;
     margin-top: 20px;
     border-radius: 3px;
+    color: #000;
     @media all and (max-width: 540px) {
         padding: 10px;
         margin-top: 10px;

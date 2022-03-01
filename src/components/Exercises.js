@@ -65,35 +65,35 @@ const Exercises = ({favorites, setFavorites, exercises, setExersises, showExerci
                             onChange={(ev)=> updateSearchData(ev.target.value, ev.target.name)} 
                             defaultValue="Select equipment"
                         >
-                            <option>Select equipment</option>
-                            <option>assisted</option>
-                            <option>band</option>
-                            <option>barbell</option>
-                            <option>body weight</option>
-                            <option>bosu ball</option>
-                            <option>cable</option>
-                            <option>dumbbell</option>
-                            <option>elliptical machine</option>
-                            <option>ez barbell</option>
-                            <option>hammer</option>
-                            <option>kettlebell</option>
-                            <option>leverage machine</option>
-                            <option>medicine ball</option>
-                            <option>olympic barbell</option>
-                            <option>resistance band</option>
-                            <option>roller</option>
-                            <option>rope</option>
-                            <option>skierg machine</option>
-                            <option>sled machine</option>
-                            <option>smith machine</option>
-                            <option>stability ball</option>
-                            <option>stationary bike</option>
-                            <option>stepmill machine</option>
-                            <option>tire</option>
-                            <option>trap bar</option>
-                            <option>upper body ergometer</option>
-                            <option>weighted</option>
-                            <option>wheel roller</option>
+                            <Option>Select equipment</Option>
+                            <Option>assisted</Option>
+                            <Option>band</Option>
+                            <Option>barbell</Option>
+                            <Option>body weight</Option>
+                            <Option>bosu ball</Option>
+                            <Option>cable</Option>
+                            <Option>dumbbell</Option>
+                            <Option>elliptical machine</Option>
+                            <Option>ez barbell</Option>
+                            <Option>hammer</Option>
+                            <Option>kettlebell</Option>
+                            <Option>leverage machine</Option>
+                            <Option>medicine ball</Option>
+                            <Option>olympic barbell</Option>
+                            <Option>resistance band</Option>
+                            <Option>roller</Option>
+                            <Option>rope</Option>
+                            <Option>skierg machine</Option>
+                            <Option>sled machine</Option>
+                            <Option>smith machine</Option>
+                            <Option>stability ball</Option>
+                            <Option>stationary bike</Option>
+                            <Option>stepmill machine</Option>
+                            <Option>tire</Option>
+                            <Option>trap bar</Option>
+                            <Option>upper body ergometer</Option>
+                            <Option>weighted</Option>
+                            <Option>wheel roller</Option>
                         </Select>
                     </Label>
                 </Div>
@@ -104,26 +104,26 @@ const Exercises = ({favorites, setFavorites, exercises, setExersises, showExerci
                             onChange={(ev)=> updateSearchData(ev.target.value, ev.target.name)} 
                             defaultValue="Select target"
                         >
-                            <option>Select target</option>
-                            <option>abductors</option>
-                            <option>abs</option>
-                            <option>adductors</option>
-                            <option>biceps</option>
-                            <option>calves</option>
-                            <option>cardiovascular system</option>
-                            <option>delts</option>
-                            <option>forearms</option>
-                            <option>glutes</option>
-                            <option>hamstrings</option>
-                            <option>lats</option>
-                            <option>levator scapulae</option>
-                            <option>pectorals</option>
-                            <option>quads</option>
-                            <option>serratus anterior</option>
-                            <option>spine</option>
-                            <option>traps</option>
-                            <option>triceps</option>
-                            <option>upper back</option>
+                            <Option>Select target</Option>
+                            <Option>abductors</Option>
+                            <Option>abs</Option>
+                            <Option>adductors</Option>
+                            <Option>biceps</Option>
+                            <Option>calves</Option>
+                            <Option>cardiovascular system</Option>
+                            <Option>delts</Option>
+                            <Option>forearms</Option>
+                            <Option>glutes</Option>
+                            <Option>hamstrings</Option>
+                            <Option>lats</Option>
+                            <Option>levator scapulae</Option>
+                            <Option>pectorals</Option>
+                            <Option>quads</Option>
+                            <Option>serratus anterior</Option>
+                            <Option>spine</Option>
+                            <Option>traps</Option>
+                            <Option>triceps</Option>
+                            <Option>upper back</Option>
                         </Select>
                     </Label>
                 </Div>
@@ -211,7 +211,6 @@ const Select = styled.select`
     padding: 10px 20px;
     margin-top: 20px;
     border-radius: 3px;
-    color: #000;
     @media all and (max-width: 540px) {
         padding: 10px;
         margin-top: 10px;
@@ -226,6 +225,9 @@ const Select = styled.select`
     @media all and (max-width: 360px) {
         font-size: 14px;
     }
+`;
+const Option = styled.option`
+    color: #000;
 `;
 const Buttons = styled.div`
     display: flex;

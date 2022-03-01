@@ -109,7 +109,7 @@ const Main = styled.div`
 `;
 const Background = styled.div`
     position: fixed;
-    top: 0;
+    top: 100px;
     left: 0;
     background-image: url(${bg});
     background-repeat: no-repeat;
@@ -119,6 +119,12 @@ const Background = styled.div`
     height: 100vh;
     width: 100%;
     z-index: -100;
+    @media all and (max-width: 1180px) {
+        top: 80px;
+    }
+    @media all and (max-width: 414px) {
+        top: 50px;
+    }
 `;
 const NavBar = styled.nav`
     display: flex;

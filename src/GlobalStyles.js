@@ -38,7 +38,7 @@ export default createGlobalStyle`
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        height: 100vh;
+        min-height: 100vh;
         width: 100%;
         z-index: -1;
     }
